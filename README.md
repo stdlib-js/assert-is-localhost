@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isLocalhost from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-localhost@deno/mod.js';
+import isLocalhost from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-localhost@v0.1.1-deno/mod.js';
 ```
 
 #### isLocalhost( value )
@@ -88,7 +88,7 @@ bool = isLocalhost( 'stdlib.io' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isLocalhost from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-localhost@deno/mod.js';
+import isLocalhost from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-localhost@v0.1.1-deno/mod.js';
 
 var bool = isLocalhost( 'localhost' );
 // returns true
