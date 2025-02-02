@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,26 +16,15 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
-
-var isString = require( '@stdlib/assert-is-string' ).isPrimitive;
-
-
-// VARIABLES //
-
-// IPv4 127.0.0.0/8 address block:
-var RE_LOCALHOST_IPV4 = /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/;
-
-
-// MAIN //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
 /**
 * Tests whether a value is a localhost hostname.
 *
-* @param {*} value - value to test
-* @returns {boolean} boolean indicating whether value is a localhost hostname
+* @param value - value to test
+* @returns boolean indicating whether value is a localhost hostname
 *
 * @example
 * var bool = isLocalhost( 'localhost' );
@@ -61,21 +50,9 @@ var RE_LOCALHOST_IPV4 = /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
 * var bool = isLocalhost( null );
 * // returns false
 */
-function isLocalhost( value ) {
-	if ( !isString( value ) ) {
-		return false;
-	}
-	return (
-		value === 'localhost' || value === 'LOCALHOST' ||
-
-		// IPv6 localhost address:
-		value === '[::1]' ||
-
-		RE_LOCALHOST_IPV4.test( value )
-	);
-}
+declare function isLocalhost( value: any ): boolean;
 
 
 // EXPORTS //
 
-module.exports = isLocalhost;
+export = isLocalhost;
