@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-localhost",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Test whether a value is a localhost hostname.",
   "license": "Apache-2.0",
   "author": {
