@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,34 +16,43 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
 /**
-* Test whether a value is a localhost hostname.
+* Tests whether a value is a localhost hostname.
 *
-* @module @stdlib/assert-is-localhost
+* @param value - value to test
+* @returns boolean indicating whether value is a localhost hostname
 *
 * @example
-* var isLocalhost = require( '@stdlib/assert-is-localhost' );
-*
 * var bool = isLocalhost( 'localhost' );
 * // returns true
 *
-* bool = isLocalhost( '127.0.0.1' );
+* @example
+* var bool = isLocalhost( '127.0.0.1' );
 * // returns true
 *
-* bool = isLocalhost( '[::1]' );
+* @example
+* var bool = isLocalhost( '[::1]' );
 * // returns true
 *
-* bool = isLocalhost( 'stdlib.io' );
+* @example
+* var bool = isLocalhost( 'wikipedia.org' );
+* // returns false
+*
+* @example
+* var bool = isLocalhost( 'stdlib.io' );
+* // returns false
+*
+* @example
+* var bool = isLocalhost( null );
 * // returns false
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function isLocalhost( value: any ): boolean;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = isLocalhost;
